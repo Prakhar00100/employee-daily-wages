@@ -9,6 +9,25 @@ employee=$((RANDOM%2))
 
  echo "employee is present" $employee
 
+#Variables
+Wage_per_hour=20
+Full_time_hour=8
+Part_time_hour=4
+
+Daily_employee_wage_full=$(($Wage_per_hour*$Full_time_hour))
+#echo "Daily Employee Wage Full Time - "$Daily_employee_wage_full
+
+Daily_employee_wage_part=$(($Wage_per_hour*$Part_time_hour))
+#echo "Daily Employee Wage Part Time - "$Daily_employee_wage_part
+
+echo "enter choice :"
+read ch
+case $ch in
+    1)echo "Daily Employee Wage Full Time - "$Daily_employee_wage_full;;
+    2)echo "Daily Employee Wage Part Time - "$Daily_employee_wage_part;;
+    *)echo "wrong choice";;
+esac
+
 #Constants
 #declaration & initialization
 EMPLOYEE_RATE_PER_HOUR=100
