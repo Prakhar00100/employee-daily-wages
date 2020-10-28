@@ -1,5 +1,6 @@
 #!/bin/bash -x
 
+#variables
 Wage_per_hour=20
 
 day_hour=8
